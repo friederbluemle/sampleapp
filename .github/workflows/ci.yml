@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: ./gradlew lint
-      - run: ./gradlew test
+      - uses: gradle/wrapper-validation-action@v1
+      - run: ./gradlew build
